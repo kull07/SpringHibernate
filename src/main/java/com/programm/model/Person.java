@@ -17,6 +17,7 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+    private String lastName;
     private String country;
 
     public int getId() {
@@ -35,6 +36,14 @@ public class Person {
         this.name = name;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     public String getCountry() {
         return country;
     }
@@ -45,6 +54,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "id=" + id + ", name=" + name + ", country=" + country;
+        return "id=" + id + ", name=" + name + ", last name=" + lastName + ", country=" + country;
     }
+
 }

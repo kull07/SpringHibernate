@@ -46,6 +46,16 @@
         </tr>
         <tr>
             <td>
+                <form:label path="lastName">
+                    <spring:message text="Last Name"/>
+                </form:label>
+            </td>
+            <td>
+                <form:input path="lastName" />
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <form:label path="country">
                     <spring:message text="Country"/>
                 </form:label>
@@ -75,6 +85,7 @@
         <tr>
             <th width="80">Person ID</th>
             <th width="120">Person Name</th>
+            <th width="120">Person Last Name</th>
             <th width="120">Person Country</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
@@ -83,6 +94,7 @@
             <tr>
                 <td>${person.id}</td>
                 <td>${person.name}</td>
+                <td>${person.lastName}</td>
                 <td>${person.country}</td>
                 <td><a href="<c:url value='/edit/${person.id}' />" >Edit</a></td>
                 <td><a href="<c:url value='/remove/${person.id}' />" >Delete</a></td>
