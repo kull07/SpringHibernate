@@ -65,6 +65,16 @@
             </td>
         </tr>
         <tr>
+            <td>
+                <form:label path="password">
+                    <spring:message text="Password"/>
+                </form:label>
+            </td>
+            <td>
+                <form:input path="password"  />
+            </td>
+        </tr>
+        <tr>
             <td colspan="2">
                 <c:if test="${!empty person.name}">
                     <input type="submit"
@@ -87,6 +97,7 @@
             <th width="120">Person Name</th>
             <th width="120">Person Last Name</th>
             <th width="120">Person Country</th>
+            <th width="120">Person Password</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
         </tr>
@@ -96,6 +107,7 @@
                 <td>${person.name}</td>
                 <td>${person.lastName}</td>
                 <td>${person.country}</td>
+                <td>${person.password}</td>
                 <td><a href="<c:url value='/edit/${person.id}' />" >Edit</a></td>
                 <td><a href="<c:url value='/remove/${person.id}' />" >Delete</a></td>
             </tr>

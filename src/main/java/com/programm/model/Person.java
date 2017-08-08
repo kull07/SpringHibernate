@@ -19,6 +19,7 @@ public class Person {
     private String name;
     private String lastName;
     private String country;
+    private int password;
 
     public int getId() {
         return id;
@@ -52,9 +53,17 @@ public class Person {
         this.country = country;
     }
 
+    public int getPassword() {
+        return password;
+    }
+
+    public void setPassword(int password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
-        return "id=" + id + ", name=" + name + ", last name=" + lastName + ", country=" + country;
+        return "id=" + id + ", name=" + name + ", last name=" + lastName + ", country=" + country + ", password=" + password;
     }
 
 }
