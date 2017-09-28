@@ -19,7 +19,7 @@ public class Person {
     private String name;
     private String lastName;
     private String country;
-    private int password;
+    private String password;
 
     public int getId() {
         return id;
@@ -53,11 +53,11 @@ public class Person {
         this.country = country;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
